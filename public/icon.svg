@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B7A4E" />
+      <stop offset="100%" stop-color="#2E9D6B" />
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86EFAC" />
+      <stop offset="100%" stop-color="#4ADE80" />
+    </linearGradient>
+  </defs>
+  <!-- Background with safe zone -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Sun / Solar energy -->
+  <circle cx="256" cy="170" r="64" fill="url(#sun)" />
+  <g stroke="#FDE047" stroke-width="8" stroke-linecap="round" opacity="0.8">
+    <line x1="256" y1="80" x2="256" y2="94" />
+    <line x1="256" y1="246" x2="256" y2="260" />
+    <line x1="166" y1="170" x2="180" y2="170" />
+    <line x1="332" y1="170" x2="346" y2="170" />
+    <line x1="192" y1="106" x2="202" y2="116" />
+    <line x1="310" y1="224" x2="320" y2="234" />
+    <line x1="192" y1="234" x2="202" y2="224" />
+    <line x1="310" y1="116" x2="320" y2="106" />
+  </g>
+
+  <!-- Solar Rooftop Grid Panel -->
+  <path d="M120 340 L220 220 L292 220 L392 340 Z" fill="#0F172A" opacity="0.85"/>
+  <!-- Solar Cells Grid lines -->
+  <path d="M120 340 L220 220 L292 220 L392 340 Z" fill="none" stroke="#38BDF8" stroke-width="4"/>
+  <line x1="205" y1="220" x2="185" y2="340" stroke="#38BDF8" stroke-width="3" opacity="0.8"/>
+  <line x1="256" y1="220" x2="256" y2="340" stroke="#38BDF8" stroke-width="3" opacity="0.8"/>
+  <line x1="307" y1="220" x2="327" y2="340" stroke="#38BDF8" stroke-width="3" opacity="0.8"/>
+  <line x1="150" y1="300" x2="362" y2="300" stroke="#38BDF8" stroke-width="3" opacity="0.8"/>
+  <line x1="180" y1="260" x2="332" y2="260" stroke="#38BDF8" stroke-width="3" opacity="0.8"/>
+
+  <!-- Green Leaf / Sprout (Greening Your Life) -->
+  <path d="M256 320 C230 380 290 410 320 400 C330 360 300 320 256 320 Z" fill="url(#leaf)" />
+  <path d="M256 320 Q285 365 315 398" stroke="#15803D" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Green View Agrotech CRM",
+  "description": "Mobile-first rooftop solar CRM for Green View Agrotech (PM Surya Ghar). Greening Your Life.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
