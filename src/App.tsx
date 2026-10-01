@@ -35,12 +35,12 @@ const MainAppLayout: React.FC = () => {
   const [hasCompletedSetup, setHasCompletedSetup] = useState<boolean>(() => {
     try {
       const stored = localStorage.getItem('gva_crm_setup_completed');
-      if (stored === 'true') return true;
-      if (settings.webAppUrl && settings.webAppUrl.trim().length > 0) return true;
+      if (stored === 'false') return false;
+      return true; // Default to instant demo ready out of the box
     } catch {
       // ignore
     }
-    return false;
+    return true;
   });
 
   // Active tab state
@@ -83,7 +83,7 @@ const MainAppLayout: React.FC = () => {
   }
 
   if (!realUser) {
-    return <LoginScreen />;
+    return <LoginScreen onOpenSetup={() => setHasCompletedSetup(false)} />;
   }
 
   // Compute dynamic badge counts

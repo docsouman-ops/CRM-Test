@@ -63,7 +63,7 @@ export const INITIAL_USERS: User[] = [
     role: 'admin',
     active: true,
     phone: '9830112233',
-    mustChangePassword: true, // Default admin prompt
+    mustChangePassword: false, // Ready for instant demo
   },
   {
     id: 'usr_bo_1',

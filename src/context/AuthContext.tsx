@@ -34,7 +34,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (stored) {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed;
+          return parsed.map((u: User) => (u.username === 'admin' ? { ...u, mustChangePassword: false } : u));
         }
       }
     } catch {
